@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1050" viewBox="0 0 900 1050" role="img" aria-label="现代客厅与艺术肌理墙示意">
+<defs>
+ <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8e0d3"/><stop offset=".55" stop-color="#cfbfaa"/><stop offset="1" stop-color="#aa997f"/></linearGradient>
+ <linearGradient id="niche" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#ae9e87"/><stop offset=".3" stop-color="#ccbda6"/><stop offset="1" stop-color="#ebe2d4"/></linearGradient>
+ <linearGradient id="floor" x1="0" x2=".2" y1="0" y2="1"><stop stop-color="#9f8871"/><stop offset="1" stop-color="#c9b59d"/></linearGradient>
+ <linearGradient id="sofa" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#f4eee4"/><stop offset=".58" stop-color="#dfd5c8"/><stop offset="1" stop-color="#b8aa99"/></linearGradient>
+ <linearGradient id="cushion" x1="0" y1="0" x2=".9" y2=".7"><stop stop-color="#f7f2e9"/><stop offset="1" stop-color="#c7bfb4"/></linearGradient>
+ <radialGradient id="sun"><stop stop-color="#fff6df" stop-opacity=".8"/><stop offset="1" stop-color="#fff5dd" stop-opacity="0"/></radialGradient>
+ <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".16" numOctaves="3" seed="5" result="f"/><feColorMatrix in="f" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer></filter>
+ <filter id="shadow" x="-25%" y="-30%" width="150%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="softer"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="900" height="1050" fill="#d2c4b0"/>
+<path d="M0 0H900V830L0 760Z" fill="url(#wall)"/><path d="M0 0H900V800L0 775Z" filter="url(#noise)" opacity=".58"/>
+<!-- wall architecture -->
+<path d="M52 0H617V770H52Z" fill="#f2e9d9" opacity=".16"/><path d="M90 0H111V795H90Z" fill="#e7d9c5" opacity=".8"/>
+<path d="M166 0H560V730H166Z" fill="#c2b09b" opacity=".45"/>
+<path d="M180 0H552V735H180Z" fill="url(#niche)"/>
+<path d="M213 0H524V730H213Z" fill="#c1b096"/>
+<path d="M247 0H493V694H247Z" fill="#d1c0a8"/>
+<path d="M245 0H495V697H245Z" filter="url(#noise)" opacity=".42"/>
+<path d="M247 692H493L528 728H212Z" fill="#ad9880" opacity=".7"/>
+<path d="M70 0H96V778H70Z" fill="#e7dbca" opacity=".5"/>
+<!-- wall wash -->
+<ellipse cx="550" cy="245" rx="340" ry="370" fill="url(#sun)"/>
+<!-- sconces -->
+<path d="M680 140V215" stroke="#5b6254" stroke-width="6"/><path d="M632 205Q680 132 728 205Q686 248 632 205Z" fill="#d9c0a0"/><ellipse cx="680" cy="217" rx="52" ry="14" fill="#f7e7cb" opacity=".76"/><path d="M635 222Q675 310 720 222" fill="url(#sun)"/>
+<!-- slim painting -->
+<rect x="570" y="306" width="225" height="287" rx="2" fill="#857962" opacity=".23"/><rect x="556" y="292" width="225" height="287" fill="#8c7d66"/><rect x="567" y="303" width="203" height="265" fill="#ded3be"/><path d="M590 488Q620 420 641 441T720 414" stroke="#a59c8a" stroke-width="31" fill="none" opacity=".35"/><path d="M583 512Q663 493 721 421" stroke="#7d846f" stroke-width="3" fill="none" opacity=".7"/><circle cx="685" cy="371" r="33" fill="#c0b399" opacity=".62"/>
+<!-- floor -->
+<path d="M0 750L900 786V1050H0Z" fill="url(#floor)"/>
+<path d="M0 750L900 786" stroke="#877660" stroke-width="4"/><path d="M0 850L900 865M0 955L900 928" stroke="#a38c75" stroke-width="2" opacity=".3"/>
+<!-- rug -->
+<ellipse cx="450" cy="928" rx="410" ry="120" fill="#453b31" opacity=".18" filter="url(#shadow)"/><ellipse cx="450" cy="915" rx="397" ry="115" fill="#dfd7c8"/><ellipse cx="450" cy="916" rx="371" ry="98" fill="none" stroke="#c6bdad" stroke-width="2" opacity=".8"/>
+<!-- plant shadows -->
+<path d="M80 761Q15 705 62 571" stroke="#717963" stroke-width="8" fill="none" opacity=".4"/><path d="M90 753Q98 600 159 535" stroke="#5d705a" stroke-width="7" fill="none" opacity=".42"/>
+<!-- sofa shadow -->
+<ellipse cx="417" cy="929" rx="341" ry="64" fill="#574738" opacity=".24" filter="url(#shadow)"/>
+<!-- sofa legs -->
+<path d="M158 881v61m504-61v61" stroke="#746c60" stroke-width="19"/>
+<!-- curved sofa back -->
+<path d="M138 685C125 627 159 597 226 590H573C662 589 719 638 723 702V824H136Z" fill="url(#sofa)"/>
+<path d="M138 691Q173 641 244 642H600Q690 653 716 723" stroke="#fff9f0" stroke-width="10" opacity=".43" fill="none"/>
+<!-- central seams -->
+<path d="M397 630V781M563 638V776" stroke="#bcb3a8" stroke-width="2" opacity=".56"/>
+<!-- seat -->
+<path d="M142 773Q144 748 177 744H677Q706 747 709 772V866Q697 896 661 898H190Q156 899 140 864Z" fill="url(#sofa)"/>
+<path d="M143 788Q423 814 709 788" fill="none" stroke="#fff9f0" stroke-width="9" opacity=".34"/>
+<path d="M148 860Q427 876 699 858" fill="none" stroke="#a99e90" stroke-width="3" opacity=".55"/>
+<!-- sofa cushions -->
+<rect x="219" y="663" width="117" height="115" rx="22" fill="url(#cushion)" transform="rotate(-11 278 722)"/><path d="M243 695L287 735" stroke="#d0c4b7" stroke-width="3" opacity=".6"/>
+<rect x="583" y="673" width="105" height="102" rx="20" fill="#c0b6a7" transform="rotate(10 636 725)"/>
+<!-- coffee table -->
+<ellipse cx="570" cy="970" rx="184" ry="45" fill="#3e3228" opacity=".22" filter="url(#shadow)"/>
+<path d="M468 900L485 998Q566 1012 646 997L671 891" fill="#806649"/><ellipse cx="567" cy="893" rx="186" ry="53" fill="#82694e"/><ellipse cx="567" cy="885" rx="185" ry="50" fill="#a68b69"/><ellipse cx="567" cy="884" rx="167" ry="41" fill="#9a7957" opacity=".42"/>
+<!-- vase and dried stems -->
+<path d="M526 845Q519 863 530 876Q547 887 566 874Q570 858 557 844Z" fill="#d9d0c0"/><ellipse cx="541" cy="844" rx="18" ry="7" fill="#c7b9a4"/>
+<path d="M540 843Q532 800 518 777M541 841Q549 795 576 765M544 842Q547 792 536 746" fill="none" stroke="#88826d" stroke-width="2.5"/>
+<path d="M516 777Q486 771 502 748Q524 756 516 777M576 765Q588 744 607 753Q605 771 576 765M536 746Q517 718 533 705Q549 719 536 746" fill="#b1a58d" opacity=".82"/>
+<!-- small bowl -->
+<ellipse cx="638" cy="897" rx="30" ry="8" fill="#d9c8ae"/><path d="M608 897Q614 916 637 915Q657 913 668 897" fill="#c3af90"/>
+<!-- edge lighting -->
+<path d="M0 0H900V1050H0Z" fill="none" stroke="#544632" stroke-width="4" opacity=".04"/>
+</svg>
